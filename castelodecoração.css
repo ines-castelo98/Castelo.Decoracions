@@ -7,6 +7,9 @@ main {
 
 div { text-align: center;}
 
-.container {
-        flex-direction: row | row-reverse | column | column-reverse;
-      }
+footer {
+        background-color: rgba(0,255,0,0.2);
+    }
+    div {
+        text-align: RIGHT;
+    }
