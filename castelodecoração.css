@@ -8,8 +8,18 @@ main {
 div { text-align: center;}
 
 footer {
-        background-color: rgba(0,255,0,0.2);
+        background-color: rgba(7, 61, 7, 0.158);
     }
     div {
         text-align: RIGHT;
     }
+    @font-face {
+        font-family: 'StMarieThin';
+        src: url('StMarie-Thin-webfont.eot');
+        src: url('StMarie-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+        url('StMarie-Thin-webfont.woff') format('woff'),
+        url('StMarie-Thin-webfont.ttf') format('truetype'),
+        url('StMarie-Thin-webfont.svg#StMarieThin') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        }
