@@ -3,13 +3,13 @@ img { max-width: 100%;}
 main { 
         /*display: flex;
         flex-wrap: wrap;*/
+       
+
      }
 
-div { text-align: center;}
+div { text-align: RIGTH;}
 
-footer {
-        background-color: rgba(12, 7, 61, 0.158);
-    }
+
     div {
-        text-align: RIGHT;
+        text-align: left;
     }

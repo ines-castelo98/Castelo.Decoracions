@@ -3,3 +3,8 @@
 [0106/125348.542:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não conseguiu localizar o caminho especificado. (0x3)
 [0112/140720.554:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não conseguiu localizar o caminho especificado. (0x3)
 [0115/164304.393:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não conseguiu localizar o caminho especificado. (0x3)
+
+
+footer {
+        background-color: rgba(19, 10, 94, 0.158);
+    }
