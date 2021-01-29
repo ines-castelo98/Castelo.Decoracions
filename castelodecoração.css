@@ -1,15 +1,24 @@
-img { max-width: 100%;}
+.img { max-width: 100%;}
 
-main { 
+.main { 
         /*display: flex;
         flex-wrap: wrap;*/
-       
-
      }
 
-div { text-align: RIGTH;}
+.div { text-align: RIGTH;}
 
 
     div {
         text-align: left;
     }
+.flex-container{ text-align:center;
+
+}
+
+.Cozinhas{ text-align:center;
+} 
+
+.Varanda{ text-align:center;
+}
+
+.video{ text-align:center}

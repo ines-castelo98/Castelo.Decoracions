@@ -7,4 +7,4 @@
 
 footer {
         background-color: rgba(19, 10, 94, 0.158);
-    }
+    }[0123/184621.078:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não conseguiu localizar o caminho especificado. (0x3)
