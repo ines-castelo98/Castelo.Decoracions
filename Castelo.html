@@ -8,7 +8,11 @@
 
     <style>
         body {
-            background-image: url("14-141725_2-tropical-desktop.jpg")
+            -webkit-webkit: opacity 0.3;
+            -moz-webkit: opacity 0.3;
+            -ms-webkit: opacity 0.3;
+            -o-webkit: opacity 0.3;
+            webkit: opacity 0.3;; background-image: url("14-141725_2-tropical-desktop.jpg") 
         }
     </style>
 </head>
@@ -70,10 +74,10 @@
 </div align="center">
 <p>
     <h4>
-    <u><FONT SIZE=+10 Align="Central"><i>Varandas e Terraços</i></FONT> </h4></u> 
+    <FONT SIZE=+10 Align="Central"><i>Varandas e Terraços</i></FONT> </h4> 
 </p>
         <div.a>
-            <ul class="Varanda">
+            <ul class="flex-container wrap">
                 
                     <img src="Imagens/Varanda 6.jpg"height="380"Align="Central"border="5">
                     <img src="Imagens/Varanda 2.jpg"height="380"Align="Central"border="5">
@@ -86,7 +90,8 @@
             </ul>
             <p>
             
-    <h4> <u class="Cozinhas" ><FONT SIZE=+10 Align="Central"><i>Cozinhas</i></FONT></u> 
+    <h4>   <ul class="flex-container wrap"></ul>
+        <FONT SIZE=+10 Align="Central"><i>Cozinhas</i></FONT> 
                 </h4>
 
                 
@@ -99,12 +104,12 @@
             
             </p>
     
-    <h4> <u><FONT SIZE=+10 Align="Central"><i>Sala de Estar</i></FONT></u> 
+    <h4> <FONT SIZE=+10 Align="Central"><i>Sala de Estar</i></FONT> 
                 </h4>
 
                 
             </p>
-            <ul class="flex-container wrap">
+            <ul class="flex-container wrap"></ul>
                     
                         <img src="Imagens/sala 4.jpg"height="380"Align="Central"border="5">
                         <img src="Imagens/sala 5.jpg"height="380"Align="Central"border="5">
@@ -115,7 +120,7 @@
                 
                 <ul>
                    
-                    <u><h4> <FONT SIZE=+10 Align="Central"><i>Quarto</i></FONT></u>
+                    <h4> <FONT SIZE=+10 Align="Central"><i>Quarto</i></FONT>
                     </h4>
     
                     
@@ -140,6 +145,65 @@
     </div>
     
     </p>
-    
+    <form>
+
+        <fieldset class="grupo">
+            <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="Apelido"><strong>Apelido</strong></label>
+                <input type="text" name="Apelido" id="Apelido" required>
+            </div>
+        </fieldset> 
+
+        <!-- Campo de email com-->
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+        <div class="campo">
+            <label><strong>Gostaste do nosso site?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="Sim" checked>Sim
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="Não">Não 
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="Mais ou menos">Mais ou menos 
+            </label>
+        </div>
+
+        <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+        <div class="campo">
+            <label for="Qual a tua divisão preferida?"><strong>Qual a tua divisão preferida?</strong></label>
+            <select id="divisão" required>
+              <option selected disabled value="">Selecione</option>
+              <option>Quarto</option>
+              <option>Cozinha</option>
+              <option>Varandas e Terraços</option>
+            </select>
+        </div>
+
+        <!-- Caixa de texto -->
+        <div class="campo">
+            <br>
+            <label for="experiencia"><strong>O que mudarias no nosso site? Dá-nos a tua opinião! </strong></label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <!-- Botão para enviar o formulário -->
+        <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+    </form>
+
 </body>
+
 </html>
