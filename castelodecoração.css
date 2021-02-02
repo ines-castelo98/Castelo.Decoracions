@@ -19,36 +19,29 @@
 
 
 /* Elementos de tag <fieldset>*/
-p.remark {
-    border: 2px solid green;
-    padding: 4px;
-    margin-left: 24px;
-    }
-fieldset {
-    border: 5;
-    text-align: center;
 
-}
+fieldset{ border: 3;
+    text-align: :right;}
 
 
 /* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
 .grupo:before, .grupo:after {
-    display: table;
+    display: table-column;
 }
 
 /* Elementos de classe "grupo" no estado da pseudoclasse "after" */
 .grupo:after {
-    clear: both;
+    clear:right;
 }
 
 /* Elementos de classe "campo" */
 .campo {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 /* Elementos de classe "campo" de tag <label> */
 .campo label {
-    margin-bottom: 0.2em;
+    margin-bottom: 0.5em;
     color: #09361c;
     display: block;
 }
@@ -56,32 +49,32 @@ fieldset {
 /* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
 fieldset.grupo .campo {
     float:  center;
-    margin-right: 1em;
+    margin-right: 0.5em;
 }
 
 /* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
 .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
-    padding: 0.2em;
+    padding: 0.5em;
     border: 1px solid #063d23;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    box-shadow: 3px 3px 3px rgba(5, 49, 27, 0.2);
     display: block;
 }
 
 /* Elementos de classe "campo" de tag <select> e <option>*/
 .campo select option {
-    padding-right: 1em;
+    padding-right: 0.5em;
 }
 
 /* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
 .campo input:focus, .campo select:focus, .campo textarea:focus {
-    background: #E0E0F8;
+    background: #0a7c3d;
 }
 
 
 
 /* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
 .botao:hover {
-    background: #CCBBFF;
+    background: #094d2b;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
 }
@@ -92,12 +85,12 @@ fieldset.grupo .campo {
 }
 /* Elemento de classe "botao" */
 .botao {
-    font-size: 1.2em;
+    font-size: 1em;
     background: #084624;
-    border: 0;
-    margin-bottom: 1em;
-    color: #ffffff;
-    padding: 0.2em 0.6em;
+    border: 1;
+    margin-bottom: 2em;
+    color: #041f0c;
+    padding: 0.3em 0.7em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     position: left;
@@ -106,4 +99,20 @@ fieldset.grupo .campo {
     margin-right: -50%;
     transform: translate(-50%, -50%)
     
+    
+}
+div {
+    width: 90px;
+    height: 100px;
+}
+#div1 {
+    background-color: magenta;    
+}
+#div2 {
+    background-color: teal;
+}
+div {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
 }
